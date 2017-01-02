@@ -78,6 +78,9 @@
                             </view>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="bmg-Dh-vGV">
                                 <rect key="frame" x="24" y="592" width="286" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="fFg-tS-EAl"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1IA-vg-lcH">
                                 <rect key="frame" x="318" y="592" width="31" height="30"/>
@@ -100,6 +103,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="1IA-vg-lcH" secondAttribute="trailing" constant="10" id="yuv-UK-NrF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="paintView" destination="53j-rc-hpy" id="MED-Uk-t96"/>
+                        <outlet property="slider" destination="bmg-Dh-vGV" id="We2-ft-Dd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

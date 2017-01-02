@@ -31,6 +31,8 @@
     //2.设置为路径的起点
     //实例化路径
     _path = [UIBezierPath bezierPath];
+    //设置线宽
+    _path.lineWidth = _lineW;
     //设置起点
     [_path moveToPoint:loc];
     //将路径添加到集合

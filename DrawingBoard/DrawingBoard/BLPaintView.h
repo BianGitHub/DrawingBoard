@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface BLPaintView : UIView
-
+//线宽
+@property(nonatomic, assign) float lineW;
 @end
