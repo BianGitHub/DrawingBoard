@@ -40,20 +40,29 @@
 #pragma mark - 监听保存按钮
 - (IBAction)saveBtnClick:(UIButton *)sender {
     
-    //截图
+    //1.截图
     UIImage *image = [_paintView sa_snapshotImage];
     
-    //保存到相册
-    /** completion 完成!
+    //2.保存到相册
+    /**
      *  @param image#>              image   需要保存的图片
      *  @param completionTarget#>   completionTarget  完成后需要执行方法的对象!
      *  @param completionSelector#> completionSelector 完成后需要执行的方法!
      *  @param contextInfo#>        contextInfo 上下文信息,可以写nil!或着字符串!
      */
-    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+//    UIImageWriteToSavedPhotosAlbum(image, nil, nil, nil);
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), @"1");
 }
 
-
-
+#pragma mark - 系统规定的图片保存到相册结束后会调用的方法
+- (void)image:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    
+    if (error) {
+        NSLog(@"错误信息 %@", error);
+        return;
+    }
+    
+    NSLog(@"保存成功 %@", contextInfo);
+}
 
 @end
