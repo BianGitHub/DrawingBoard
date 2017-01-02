@@ -72,7 +72,7 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="P5H-NI-jX1"/>
                                 </items>
                             </toolbar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53j-rc-hpy">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="53j-rc-hpy" customClass="BLPaintView">
                                 <rect key="frame" x="0.0" y="20" width="375" height="572"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
