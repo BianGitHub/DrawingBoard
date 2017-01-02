@@ -13,6 +13,15 @@
 @end
 
 @implementation BLPaintView
+{
+    NSMutableArray<UIBezierPath *> *_pathArrM;
+}
+#pragma mark - 文件完全唤醒时,实例化数组
+- (void)awakeFromNib
+{
+    [super awakeFromNib];
+    _pathArrM = [NSMutableArray array];
+}
 
 #pragma mark - 开始触摸时
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
@@ -24,6 +33,8 @@
     _path = [UIBezierPath bezierPath];
     //设置起点
     [_path moveToPoint:loc];
+    //将路径添加到集合
+    [_pathArrM addObject:_path];
     
 }
 #pragma mark - 移动时
@@ -38,7 +49,10 @@
 }
 
 - (void)drawRect:(CGRect)rect {
-    [_path stroke];
+//    [_path stroke];
+    [_pathArrM enumerateObjectsUsingBlock:^(UIBezierPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj stroke];
+    }];
 }
 
 
