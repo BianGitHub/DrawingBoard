@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11125CCE1E1AA9D90072C773 /* BLPaintView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11125CCD1E1AA9D90072C773 /* BLPaintView.m */; };
 		11B015B21E18190F00A58B93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B015B11E18190F00A58B93 /* main.m */; };
 		11B015B51E18190F00A58B93 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B015B41E18190F00A58B93 /* AppDelegate.m */; };
 		11B015B81E18190F00A58B93 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B015B71E18190F00A58B93 /* ViewController.m */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11125CCC1E1AA9D90072C773 /* BLPaintView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLPaintView.h; sourceTree = "<group>"; };
+		11125CCD1E1AA9D90072C773 /* BLPaintView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLPaintView.m; sourceTree = "<group>"; };
 		11B015AD1E18190F00A58B93 /* DrawingBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11B015B11E18190F00A58B93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11B015B31E18190F00A58B93 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				11B015B41E18190F00A58B93 /* AppDelegate.m */,
 				11B015B61E18190F00A58B93 /* ViewController.h */,
 				11B015B71E18190F00A58B93 /* ViewController.m */,
+				11125CCC1E1AA9D90072C773 /* BLPaintView.h */,
+				11125CCD1E1AA9D90072C773 /* BLPaintView.m */,
 				11B015B91E18190F00A58B93 /* Main.storyboard */,
 				11B015B01E18190F00A58B93 /* Supporting Files */,
 			);
@@ -151,6 +156,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11B015B81E18190F00A58B93 /* ViewController.m in Sources */,
+				11125CCE1E1AA9D90072C773 /* BLPaintView.m in Sources */,
 				11B015B51E18190F00A58B93 /* AppDelegate.m in Sources */,
 				11B015B21E18190F00A58B93 /* main.m in Sources */,
 			);
@@ -309,6 +315,7 @@
 				11B015C61E18190F00A58B93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
