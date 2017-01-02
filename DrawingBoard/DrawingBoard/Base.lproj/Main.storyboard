@@ -35,6 +35,9 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <state key="normal" title="橡皮擦"/>
+                                            <connections>
+                                                <action selector="colorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Ad-FV-CNV"/>
+                                            </connections>
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="pol-lJ-2lA"/>
@@ -43,6 +46,9 @@
                                             <rect key="frame" x="87" y="8" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.96395897870000002" green="0.0" blue="0.98007303479999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="colorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Ok-ZP-wTU"/>
+                                            </connections>
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="vur-5R-4J1"/>
@@ -51,6 +57,9 @@
                                             <rect key="frame" x="157" y="8" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Kd5-IC-4Du"/>
+                                            </connections>
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="nWR-Ft-6vp"/>
@@ -59,6 +68,9 @@
                                             <rect key="frame" x="228" y="8" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.31391568790000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="trU-bY-dYA"/>
+                                            </connections>
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Ulm-yn-VsY"/>
@@ -67,6 +79,9 @@
                                             <rect key="frame" x="298" y="8" width="46" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <connections>
+                                                <action selector="colorBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tvy-27-VWj"/>
+                                            </connections>
                                         </button>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="P5H-NI-jX1"/>

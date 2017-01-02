@@ -11,4 +11,6 @@
 @interface BLPaintView : UIView
 //线宽
 @property(nonatomic, assign) float lineW;
+//颜色
+@property(nonatomic, strong) UIColor *lineC;
 @end

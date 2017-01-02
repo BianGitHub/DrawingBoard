@@ -30,6 +30,12 @@
     _paintView.lineW = width;
 }
 
+- (IBAction)colorBtnClick:(UIButton *)sender {
+    
+    UIColor *color = sender.backgroundColor;
+    
+    _paintView.lineC = color;
+}
 
 
 

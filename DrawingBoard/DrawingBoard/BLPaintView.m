@@ -8,13 +8,20 @@
 
 #import "BLPaintView.h"
 
+@interface BLBezierPath : UIBezierPath
+//负责记录自己的颜色
+@property(nonatomic, strong) UIColor *lineColor;
+@end
+@implementation BLBezierPath
+@end
+
 @interface BLPaintView ()
-@property(nonatomic, strong) UIBezierPath *path;
+@property(nonatomic, strong) BLBezierPath *path;
 @end
 
 @implementation BLPaintView
 {
-    NSMutableArray<UIBezierPath *> *_pathArrM;
+    NSMutableArray<BLBezierPath *> *_pathArrM;
 }
 #pragma mark - 文件完全唤醒时,实例化数组
 - (void)awakeFromNib
@@ -30,9 +37,11 @@
     CGPoint loc = [touches.anyObject locationInView:self];
     //2.设置为路径的起点
     //实例化路径
-    _path = [UIBezierPath bezierPath];
+    _path = [BLBezierPath bezierPath];
     //设置线宽
     _path.lineWidth = _lineW;
+    //设置颜色
+    _path.lineColor = _lineC;
     //设置起点
     [_path moveToPoint:loc];
     //将路径添加到集合
@@ -52,7 +61,8 @@
 
 - (void)drawRect:(CGRect)rect {
 //    [_path stroke];
-    [_pathArrM enumerateObjectsUsingBlock:^(UIBezierPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+    [_pathArrM enumerateObjectsUsingBlock:^(BLBezierPath * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [obj.lineColor setStroke];
         [obj stroke];
     }];
 }
